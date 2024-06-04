@@ -5,14 +5,11 @@ using UnityEngine;
 public class Light : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        
+    public void SetActiveFalse() {
+        gameObject.SetActive(false);
     }
-
-    // Update is called once per frame
-    void Update()
+    public void SetActiveTrue()
     {
-        
+        gameObject.SetActive(true);
     }
 }

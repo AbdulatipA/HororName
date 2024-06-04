@@ -6,7 +6,8 @@ TagManager:
   tags:
   - Chest
   - Door
-  - TogleLight
+  - Light
+  - Swith
   layers:
   - Default
   - TransparentFX
