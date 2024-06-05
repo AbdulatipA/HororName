@@ -31,9 +31,20 @@ public class PlayerController : MonoBehaviour
                         rotateObject.RotateObject90Degrees();
                     }
                 }
-            }
-        }
 
+
+                //if (hit.collider.CompareTag("Weapon")) для поднятие предметов
+                //{
+                //    Door rotateObject = hit.collider.GetComponent<Door>();
+                //    if (rotateObject != null)
+                //    {
+                //        rotateObject.RotateObject90Degrees();
+                //    }
+                //}
+
+            }
+
+        }
 
 
 
