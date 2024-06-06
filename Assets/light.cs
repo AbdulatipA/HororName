@@ -1,30 +1,39 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+//using System.Collections;
+//using System.Collections.Generic;
+//using UnityEngine;
 
-public class Light : MonoBehaviour
-{
-    //public Light light; 
-    public bool value = true;
+//public class Light : MonoBehaviour
+//{
 
-    //public void Start() {
-    //    value = gameObject.activeSelf;
-    //    //light = GetComponent<Light>();
-    //}
-    public void SetActiveFalse()
-    {
-        value = false;
-        //gameObject.SetActive(value);
-        GetComponent<Light>().enabled = true;
-    }
+//    public bool value;
 
-    public void SetActiveTrue()
-    {
-        value = true;
-        //gameObject.SetActive(value);
-        GetComponent<Light>().enabled = false;
-    }
-}
+//public void start()
+//{
+//    value = gameObject.activeSelf;
+//    //mylight = getcomponent<light>();
+//}
+
+
+
+//    public void SetActiveFalse()
+//    {
+//        value = false;
+//        ////gameObject.SetActive(value);
+//        //GetComponent<Light>().enabled = false;
+//        gameObject.SetActive(false);
+//    }
+
+//    public void SetActiveTrue()
+//    {
+//        value = true;
+//        gameObject.SetActive(true);
+//    }
+//}
+
+
+
+
+
 
 
 

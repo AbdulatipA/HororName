@@ -7,7 +7,7 @@ TagManager:
   - Chest
   - Door
   - Light
-  - Swith
+  - Switch
   layers:
   - Default
   - TransparentFX

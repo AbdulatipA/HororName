@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Swith : MonoBehaviour
+public class Switch : MonoBehaviour
 {
     [SerializeField] public Camera mainCamera;
-    public float raycastDistance = 3f;
     [SerializeField] public GameObject Light;
+    public float raycastDistance = 3f;
 
     void Start()
     {
@@ -23,32 +23,29 @@ public class Swith : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, raycastDistance))
             {
-                if (hit.collider.CompareTag("Swith"))
+                if (hit.collider.CompareTag("Switch"))
                 {
-                    //Light gameObject = hit.collider.GetComponent<Light>();
-                    Light gameObject = FindObjectOfType<Light>();
+                    Light gameObject = hit.collider.GetComponent<Light>();
+                    //Light gameObject = FindObjectOfType<Light>();
 
-                    if (gameObject != null)
+                    if (Light != null)
                     {
                         //Light.SetActive(false);
                         //gameObject.SetActiveFalse();
-                        //Light.SetActive(!Light.activeSelf);
-                        //gameObject.SetActiveFalse();
-                        if (gameObject.value)
-                        {
-                            gameObject.SetActiveFalse();
-                        }
-                        else {
-                            gameObject.SetActiveTrue();
-                        }
+                        Light.SetActive(!Light.activeSelf);
                     }
+                    //else
+                    //{
+                    //    gameObject.SetActiveTrue();
+                    //}
+
                 }
             }
         }
     }
 }
 
-
+//using System;
 //using System.Collections;
 //using System.Collections.Generic;
 //using UnityEngine;
@@ -73,7 +70,7 @@ public class Swith : MonoBehaviour
 
 //            if (Physics.Raycast(ray, out hit, raycastDistance))
 //            {
-//                if (hit.collider.CompareTag("Swith"))
+//                if (hit.collider.CompareTag("Switch"))
 //                {
 //                    if (lightObject != null)
 //                    {
